@@ -1,0 +1,94 @@
+  body,html{
+  margin:0;
+  padding:0;
+  height:100%;
+  font-family: 'Lato', sans-serif;
+
+}
+#beach{
+  width:50%;
+}
+#coco{
+  width:8%;
+  float: left;
+}
+.title{
+  display:inline-block;
+  width:100%;
+}
+.title p{
+  font-size:35px;
+  color:white;
+  float:left;
+  font-weight: bold;
+}
+#beach{
+  width:40%;
+}
+.left{
+  float:left;
+}
+.right{
+  clear:both;
+}
+ul li{
+  color:white;
+  font-size:20px;
+  list-style-type: none;
+}
+input{
+  padding:15px;
+}
+button{
+  padding:15px;
+  background:yellow;
+  color:purple;
+  font-size:13px;
+}
+.box{
+  height:100%;
+  width:100%;
+  font-weight:bold;
+}
+h2{
+  color:white;
+  font-size:25px;
+  font-weight:bold;
+}
+.gradDynamic{
+  position:relative;
+}
+
+.gradDynamic:after, .gradDynamic:before{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  content:"";
+  z-index:-1;
+}
+
+.gradDynamic:after{
+  background:radial-gradient(circle,red,transparent);
+  background-size:400%;
+  animation:colorSpin 30s linear infinite;
+}
+
+.gradDynamic:before{
+  background-color:yellow;
+}
+
+@keyframes colorSpin{
+  25%{background-position:0 100%}
+  50%{background-position:100% 100%}
+  75%{background-position:100% 0}
+  100%{filter:hue-rotate(360deg)}
+} 
+
+
+@media only screen and (max-width:1000px){
+  #beach{
+    width:50%;
+  }
+}

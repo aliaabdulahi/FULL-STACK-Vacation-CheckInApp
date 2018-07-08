@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vacation Updates</title>
+  <link rel="shortcut icon" href="flower.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+    <div class="box gradDynamic">
+      
+      <div class="title"><img id="coco"src="https://freepngimg.com/download/vacation/1-2-vacation-png.png"> <p> Notes From Vacation</p> <img id="coco" src="https://freepngimg.com/download/vacation/1-2-vacation-png.png"></div>
+    
+
+      <section class"left">
+        <img id="beach"src="https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg">
+
+      </section>
+
+      <section class="right">
+          <div id="msgs">
+              <ul class="messages">
+                  <% for(var i=0; i<messages.length; i++) {%>
+                    <li class="message">
+                      <span><%= messages[i].name %></span>
+                      <span><%= messages[i].msg %></span>
+                      <span><%= messages[i].thumbUp %></span>
+                      <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+                      <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
+                      <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+                    </li>
+                  <% } %>
+                  </ul>
+          </div>
+          <div id="form">
+          <h2>Add a message</h2>
+          <form action="/messages" method="POST">
+            <input type="text" placeholder="Your Name" name="name">
+            <input type="text" placeholder="Your Message" name="msg">
+            <button type="submit">Submit</button>
+            </form>
+          </div>
+        </section>
+      </div>
+  
+  <!-- <section class="left">
+      <h1>Yeezy...What happened to you brother?</h1>
+      <img src="https://www.youredm.com/wp-content/uploads/2015/05/kanye-youredm-759x500.jpg">
+    <h2>Notes From Sad Ex-Fans</h2>
+    <ul class="messages">
+    <% for(var i=0; i<messages.length; i++) {%>
+      <li class="message">
+        <span><%= messages[i].name %></span>
+        <span><%= messages[i].msg %></span>
+        <span><%= messages[i].thumbUp %></span>
+        <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+        <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
+        <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+      </li>
+    <% } %>
+    </ul>
+
+    <h2>Add a message</h2>
+
+    <form action="/messages" method="POST">
+      <input type="text" placeholder="Your Name" name="name">
+      <input type="text" placeholder="Your Message" name="msg">
+      <button type="submit">Submit</button>
+    </form>
+  </section> 
+  <section class="right">
+    <h2>We Miss The Old Kanye...</h2>
+    <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2626925168/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://amerigo.bandcamp.com/album/kanye-west-i-miss-the-old-kanye-amerigo-gazaway-remix">Kanye West - I Miss The Old Kanye (Amerigo Gazaway Remix) by Amerigo Gazaway</a></iframe>
+  </section> -->
+
+  <script src="main.js"></script>
+
+</body>
+</html>
