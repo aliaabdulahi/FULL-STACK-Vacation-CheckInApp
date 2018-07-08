@@ -1,11 +1,15 @@
 # FULL-STACK-Vacation-Express
-An application where family members can check up on u during vacation 
+An application where family members can check up on one another while on vacation.
+
+![alt tag](preview.png)
 
 ## How It's Made:
-**Tech used:** HTML, CSS, JavaScript, Mongodb
+**Tech used:** HTML, CSS, JavaScript, Mongo DB, Express.js, Node.js
+
+Users can log onto the page, where they use the inputs to send messages, which are saved onto a database. They can also react to each message, also saved onto the database. 
 
 ## Lessons Learned:
-I learned how to develop server side code to deliver the application and save messages to Mongodb.
+I learned how to develop server side code to deliver the application and save messages to Mongo DB.
 
 ## Examples:
 Take a look at these couple examples that I have in my own portfolio:
